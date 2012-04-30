@@ -4,8 +4,13 @@ class Home extends CI_Controller {
 
 	public function index()
    {
-      echo "It works";
-		$this->load->view('welcome_message');
+		if (!file_exists('application/views/static/home.php'))
+		{
+			show_404();
+		}
+		
+		$data['title'] = "home";
+		$this->load->view('static/home', $data);
 	}
 }
 

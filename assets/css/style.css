@@ -1,0 +1,52 @@
+/* style.css contains only the overrides for bootstrap, with the bulk of the content (including
+   the responsive configuration within bootstrap.css.
+ */
+
+
+/* Override Bootstrap Itself ------------------------------------- */
+h1,h2 { font-weight:300; }
+hr { border-bottom: 0; margin: 5px 0; }
+.navbar .brand { font-family:'Oswald', sans-serif; font-weight:400; padding-top:10px; font-size:50px;}
+footer p { font-family:'Oswald', sans-serif; font-size:14px; line-height:normal; }
+#menu-main-menu {font-family:'Oswald', sans-serif; font-weight:400; font-size:20px;padding-top:30px;}
+#menu-search, #menu-login {padding-top:30px;}
+.dropdown-menu li>a:hover,
+.dropdown-menu .active>a,
+.dropdown-menu .active>a:hover,
+.navbar .dropdown-menu .active>a,
+.navbar .dropdown-menu .active>a:hover { background-color:#ffc227; color:#000; }
+.pagination { padding:15px 0; margin:0; border-top:1px solid rgba(141, 101, 0, 0.3);}
+.pagination a { border-color:#000; }
+
+/* Custom CSS ---------------------------------------------------- */
+.io-page-start { margin-top: 50px; margin-bottom:20px; }
+.io-about { font-family:'Oswald', sans-serif; font-size:12px; line-height:normal; }
+.io-login { padding:10px; }
+.io-login a,
+.io-login p { font-size:85%; line-height:normal; }
+.io-login .input-prepend { padding:0 0 3px 15px; }
+
+/* Custom CSS (Responsive Sizes) --------------------------------- */
+@media (min-width: 801px) {
+  .wp-pagetitle:before { content:'.io/'; }
+  h1.wp-pagetitle { margin-left:-1.2em; }
+}
+@media (max-width: 800px) {
+  .io-page-start { margin-top:10px; margin-bottom:15px; }
+  .io-login .input-prepend { padding-left:3px; }
+  .io-login button { float:none; margin-left:15px; }
+  .wp-content a { text-decoration:underline; }
+  form#menu-search { clear:both; }
+}
+@media (min-width: 720px) and (max-width): 800px) { }
+@media (max-width: 719px) {
+  body { background-image:url(); }
+  .navbar .brand { padding-top:8px; }
+  .dropup { height: 25px; }
+  .wp-widget { border-top:1px solid rgba(141, 101, 0, 0.3); padding-top:5px; margin-top:5px; clear:both; }
+  .modal { position:fixed; height:80%; }
+  .wp-gallery-row .span4 { align:center; }
+  .wp-gallery-row .span4 a { display:block; position:relative; left:50%; margin-left:-115px; }
+
+}
+@media (max-width: 480px) { }
