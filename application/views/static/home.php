@@ -9,7 +9,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type="text/css">
         body {
-            padding-top: 60px;
             padding-top: 100px;
             padding-bottom: 40px;
         }
