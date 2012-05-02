@@ -25,7 +25,7 @@ footer p { font-family:'Oswald', sans-serif; font-size:14px; line-height:normal;
 .io-login a,
 .io-login p { font-size:85%; line-height:normal; }
 .io-login .input-prepend { padding:0 0 3px 15px; }
-
+.statusfeeds { font-family:'PT Sans', sans-serif; font-size:20px; line-height:normal; }
 /* Custom CSS (Responsive Sizes) --------------------------------- */
 @media (min-width: 801px) {
   .wp-pagetitle:before { content:'.io/'; }
